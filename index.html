@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Listen your music</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="head">
+        <div class="spotifyImg">
+            <img src="img/1.png" alt="Spotify_img">
+            <span>Spotify</span>
+        </div>
+        <div class="headElements">
+            <ul>
+                <a href="home.html">
+                    <li>Home</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact Us</li>
+                </a>
+                <a href="help.html">
+                    <li>Help</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="main">
+        <div class="containerMain">
+            <div class="songItems">
+                <h1>Your Favourit Playlist :</h1>
+                <div class="songCover">
+                    <div class="Songs">
+                        <img><span class="songName"></span>
+                        <span class="songTime">02:53
+                            <i class="playing fa-solid fa-circle-play fa-1x" id="1" style="color: black; "></i>
+                        </span>
+                    </div>
+                    <div class="Songs">
+                        <img><span class="songName"></span>
+                        <span class="songTime">04:28
+                            <i class="playing fa-solid fa-circle-play fa-1x" id="2" style="color: black; "></i>
+                        </span>
+                    </div>
+                    <div class="Songs">
+                        <img><span class="songName"></span>
+                        <span class="songTime">02:37
+                            <i class="playing fa-solid fa-circle-play fa-1x" id="3" style="color: black; "></i>
+                        </span>
+                    </div>
+                    <div class="Songs">
+                        <img><span class="songName"></span>
+                        <span class="songTime">03:50
+                            <i class="playing fa-solid fa-circle-play fa-1x" id="4" style="color: black; "></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="bottom">
+            <div class="progressor">
+                <input type="range" name="range" id="progressorSong" value="0" min="0" max="100" step="0.001">
+            </div>
+            <div class="buttonIcons">
+                <i class="mainbtn fa-solid fa-backward-step fa-2x" id="previous"></i>
+                <i class="fa-circle-play mainbtn fa-regular fa-2x" id="mainPlaybtn"></i>
+                <i class="mainbtn fa-solid fa-forward-step fa-2x" id="next"></i>
+            </div>
+        </div>
+        <div class="songDesc">
+            <img src="img/gif1.gif" alt="" id="gif">
+            <span id="playedSong"></span>
+        </div>
+        <div class="volumControl">
+            <i class="fa-solid fa-volume-high fa-1x" style="color: #ffffff;"></i>
+            <input type="range" min="0" max="100" id="volumControlbtn">
+        </div>
+    <script src="https://kit.fontawesome.com/23ed4bd4c1.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
